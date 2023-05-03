@@ -4,6 +4,7 @@
 1. [Android](#Android)
 2. [Kotlin](#Kotlin)
 3. [CS](#CS)
+<br>
 
 ## Android
 ### 1. Android 4대 컴포넌트 
@@ -107,6 +108,7 @@ Android SDK 의 DEX 컴파일러에 의해 JVM 바이트 코드를 DVM 바이트
 - `String` : 불변, 문자를 수정하려면 새로운 객체를 생성해야 함
 - `StringBuffer` : 가변, 한번 만들고, 필요에 따라 크기를 변경하여 문자를 변경 (`append()` 와 같이)
 - `StringBuilder` : `StringBuffer` 와 유사하나, **동기화를 지원하지 않아 멀티 스레드 환경에 부적합**
+<br>
 
 ## Kotlin
 ### 1. Scope Function
