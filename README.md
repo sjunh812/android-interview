@@ -1,9 +1,9 @@
 # 🎙 Android Interview
 
 ## 목차
-1. [Android](Android)
-2. [Kotlin](Kotlin)
-3. [CS](CS)
+1. [Android](#Android)
+2. [Kotlin](#Kotlin)
+3. [CS](#CS)
 
 ## Android
 ### 1. Android 4대 컴포넌트 
