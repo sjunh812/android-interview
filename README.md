@@ -81,3 +81,24 @@
 ### 14. Vector 와 Bitmap
 - Vector : 리사이징 되어도 깨지지 않음. 모든 해상도에서 자유자재로 활용 가능 (ex) SVG)
 - Bitmap : 픽셀로 구성되어 있으며, 해상도에 따라 깨질 수 있음 (ex) PNG, JPEG)
+
+### 15. Android Jetpack
+안드로이드 앱을 구축하는데 도움이 되는 훌륭한 도구 모음  
+즉, Jetpack 은 안드로이드 개발자들이 더욱 쉽게 높은 퀄리티의 앱을 개발할 수 있도록 도와주는 라이브러리들의 모음집  
+(ex) `Databinding`, `Room`, `Navigation`, `Paging`, `Lifecycles`, `LiveData`)
+
+### 16. JAR, AAR, DEX, APK
+- **JAR** (Java Archive) : 해당 플랫폼에서 Java 응용 프로그램을 배포하기 위해 고안된 패키지 파일 형식 (클래스 파일, 매니페스트 파일이 포함)
+- **AAR** (Android Archive) : 안드로이드 라이브러리 프로젝트의 바이너리 배포판 (리소스 파일 포함)
+- **DEX** (Dalvik Excutable) : DVM(Dalvik Virtual Machine)을 위한 실행 파일  
+Android SDK 의 DEX 컴파일러에 의해 JVM 바이트 코드를 DVM 바이트 코드로 변환하고, 모든 class 파일을 DEX 파일에 넣음
+- **APK** (Android Application Package) : 안드로이드 플랫폼에 배포할 수 있도록 설계된 파일 
+
+### 17. Application class
+안드로이드 기본 클래스로, 안드로이드 앱에 대한 모든 컴포넌트, `Activity` 와 `Service` 를 포함하고 있는 클래스  
+응용 프로그램/패키지에 대한 프로세스가 생성될 때, 다른 클래스보다 먼저 인스턴트화   
+
+### 18. String, StringBuffer, StringBuilder
+- `String` : 불변, 문자를 수정하려면 새로운 객체를 생성해야 함
+- `StringBuffer` : 가변, 한번 만들고, 필요에 따라 크기를 변경하여 문자를 변경 (`append()` 와 같이)
+- `StringBuilder` : `StringBuffer` 와 유사하나, **동기화를 지원하지 않아 멀티 스레드 환경에 부적합**
