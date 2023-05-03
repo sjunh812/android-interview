@@ -94,7 +94,7 @@
 (ex) `Databinding`, `Room`, `Navigation`, `Paging`, `Lifecycles`, `LiveData`)
 
 ### 16. JAR, AAR, DEX, APK
-- **JAR** (Java Archive) : 해당 플랫폼에서 Java 응용 프로그램을 배포하기 위해 고안된 패키지 파일 형식 (클래스 파일, 매니페스트 파일이 포함)
+- **JAR** (Java Archive) : 해당 플랫폼에서 `Java` 응용 프로그램을 배포하기 위해 고안된 패키지 파일 형식 (클래스 파일, 매니페스트 파일이 포함)
 - **AAR** (Android Archive) : 안드로이드 라이브러리 프로젝트의 바이너리 배포판 (리소스 파일 포함)
 - **DEX** (Dalvik Excutable) : DVM(Dalvik Virtual Machine)을 위한 실행 파일  
 Android SDK 의 DEX 컴파일러에 의해 JVM 바이트 코드를 DVM 바이트 코드로 변환하고, 모든 class 파일을 DEX 파일에 넣음
@@ -134,7 +134,7 @@ Android SDK 의 DEX 컴파일러에 의해 JVM 바이트 코드를 DVM 바이트
 
 ### 3. 동등성과 동일성
 - 동등성 (equality) : 두 객체의 값이 같은지 비교, 값을 비교하며, 내부적으로 `equal()` 호출 (`==`)
-- 동일성 (identity) : 두 객채가 같은 주소를 참조하는지 비교, 주소값을 비교하며, 식별자를 기반으로 객체 판단 (`===`)
+- 동일성 (identity) : 두 객체가 같은 주소를 참조하는지 비교, 주소값을 비교하며, 식별자를 기반으로 객체 판단 (`===`)
 
 ### 4. data class 에서 copy()를 사용하는 이유? data class 를 왜 불변으로 권장하는지?
 `copy()` 를 사용하면, 복사를 하여 일부 프로퍼티를 바꾸거나, 복사본을 삭제해도 프로그램에서 원본을 참조하는 다른 부분에 전혀 영향이 없음  
@@ -147,5 +147,5 @@ data class 를 키로 하는 컨테이너를 만들고, 키로 쓰인 data class
 (중첩 클래스 : class A (static), 내부 클래스 : inner class B)
 
 ### 6. Companion object
-클래스가 메모리에 적재되면서, 함께 생성되는 객체 (Java 의 static 과 유사)  
+클래스가 메모리에 적재되면서, 함께 생성되는 객체 (`Java` 의 **static** 과 유사)  
 static 과 다르게, companion object 는 변수로 할당 가능하고, 할당된 변수를 통해 멤버를 참조할 수 있음
