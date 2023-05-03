@@ -1,4 +1,5 @@
 # 🎙 Android Interview
+안드로이드 신입 개발자 면접을 위한 간단한 개념 및 질문 정리
 
 ## 목차
 1. [Android](#Android)
