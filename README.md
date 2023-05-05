@@ -11,17 +11,17 @@
 ## Android
 ### 1. Android 4대 컴포넌트 
 안드로이드는 4개의 컴포넌트로 구성되어 있음. (`Activity`, `Service`, `Broadcast Receiver`, `Content Provider`)
-- `Actvity` : **UI** 가 있어, 사용자와 직접적인 상호작용을 하는 컴포넌트
+- `Actvity` : **UI 가 있어**, 사용자와 직접적인 상호작용을 하는 컴포넌트
 - `Service` : 백그라운드에서의 작업을 수행하는 컴포넌트
   - 포그라운드 서비스 : 알림(`Notification`)이 필요
-  - 백그라운드 서비스 : **UI** 가 없음
-  - 바인드 서비스 : 앱 내에서 서비스를 사용하여 간단한 **서버-클라이언트** 환경 구성
+  - 백그라운드 서비스 : **UI 가 없음**
+  - 바인드 서비스 : 앱 내에서 서비스를 사용하여 간단한 **서버-클라이언트 환경 구성**
 - `Broadcast Receiver` : 디바이스에서 발생하는 다양한 이벤트 및 정보를 받고 반응하는 컴포넌트
   - 정적 리시버 : **Manifest** 에 등록, 해제 불가능
   - 동적 리시버 : 클래스 파일에 동적으로 등록 및 해제 (적절히 해제하지 않을 경우 **메모리 누수** 발생)
 - `Content Provider` : 데이터를 저장하고, 가져오며, 다른 앱에 접근할 수 있도록 하는 컴포넌트
-  - 다른 앱의 데이터를 사용하기 위해 **URI** 를 이용하여, 콘텐츠 리졸버가 다른 앱의 콘텐츠 프로바이더에게 요청
-  - 요청 받은 콘텐츠 프로바이더는 **URI** 를 확인하고, 데이터를 콘텐츠 리졸버에게 전달 
+  - 다른 앱의 데이터를 사용하기 위해 `URI` 를 이용하여, 콘텐츠 리졸버가 다른 앱의 콘텐츠 프로바이더에게 요청
+  - 요청 받은 콘텐츠 프로바이더는 `URI` 를 확인하고, 데이터를 콘텐츠 리졸버에게 전달 
 
 ### 2. Activity 와 Fragment 차이
 1. `Activity` 는 독립적으로 사용 가능
@@ -96,7 +96,7 @@
 (ex) `Databinding`, `Room`, `Navigation`, `Paging`, `Lifecycles`, `LiveData`)
 
 ### 16. JAR, AAR, DEX, APK
-- **JAR** (Java Archive) : 해당 플랫폼에서 `Java` 응용 프로그램을 배포하기 위해 고안된 패키지 파일 형식 (클래스 파일, 매니페스트 파일이 포함)
+- **JAR** (Java Archive) : 해당 플랫폼에서 `Java` 응용 프로그램을 배포하기 위해 고안된 패키지 파일 형식 (클래스 파일, 매니페스트 파일 포함)
 - **AAR** (Android Archive) : 안드로이드 라이브러리 프로젝트의 바이너리 배포판 (리소스 파일 포함)
 - **DEX** (Dalvik Excutable) : DVM(Dalvik Virtual Machine)을 위한 실행 파일  
 Android SDK 의 DEX 컴파일러에 의해 JVM 바이트 코드를 DVM 바이트 코드로 변환하고, 모든 class 파일을 DEX 파일에 넣음
@@ -127,7 +127,7 @@ Android SDK 의 DEX 컴파일러에 의해 JVM 바이트 코드를 DVM 바이트
   - `var` (mutable) 를 사용
   - **primitive** 타입을 사용할 수 없음 (ex) `Int`)
   - 선언 후, 나중에 초기화 해줘도 됨
-  - 변수 타입을 반드시 지정해줘야 함 (ex) lateinit var name: String)
+  - 변수 타입을 반드시 지정해줘야 함 (ex) `lateinit var name: String`)
 - `by lazy` 
   - `val` (immutable) 를 사용
   - 선언과 동시에 초기화 필요
